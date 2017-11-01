@@ -19,3 +19,7 @@ puts ages.sort
 ages << 0
 
 puts movies[:avengers]
+
+#Exercise 2#
+
+puts colours.last
