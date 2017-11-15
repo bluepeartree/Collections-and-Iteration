@@ -15,8 +15,11 @@
   puts capacity
 
   classrooms[:data][:events].each do |event|
-    if event[:room_id] == 1 && event[:attendees] >= capacity
-      puts event.inspect
-      puts "ok!"
+    if event[:room_id] == 1
+      if event[:attendees] >= capacity
+        puts "ok"
+      else
+        puts "capacity insufficient"
+      end
     end
   end
